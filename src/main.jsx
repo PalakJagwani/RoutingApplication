@@ -14,7 +14,10 @@ const router = createBrowserRouter(
       <Route loader={github_Information} path='/github' element={<Github/>} />
       <Route path='/profile/:user_id' element={<Profile/>}/>
     </Route>
-  )
+  ), 
+  {
+    basename : "/RoutingApplication"
+  }
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
